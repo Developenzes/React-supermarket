@@ -33,11 +33,9 @@ export default function Cart() {
           customerEmail: email,
         })
         .then((response) => {
-          // this will only log if the redirect did not work
           console.log(response.error);
         })
         .catch((error) => {
-          // wrong API key? you will see the error message here
           console.log(error);
         });
     });
