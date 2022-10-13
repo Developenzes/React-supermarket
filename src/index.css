@@ -188,6 +188,7 @@
   
   /* NAVBAR */
   .navbar {
+    min-width: 100%;
     background-color: white;
     padding: 10px;
     box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
@@ -195,6 +196,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
   
   .nav-brand {
@@ -280,40 +282,40 @@
   .about-layout {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-gap: 20px;
-    padding-top: 40px;
+    grid-gap: 1.25rem;
+    padding-top: 2.5rem;
   }
   
   .products-layout,
   .cart-layout {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   
   .product-details-layout {
-    padding-top: 40px;
+    padding-top: 2.5rem;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 40px;
+    grid-gap: 2.5rem;
   }
   
   /* Products */
   .products-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 1.5rem;
   }
   
   .product {
     background-color: white;
-    padding: 15px 20px;
-    border-radius: 25px;
+    padding: 1rem 1.1rem; 
+    border-radius: 1.6rem;
     display: grid;
     grid-template-columns: auto 1fr auto;
   }
   
   .product-info {
-    padding-left: 25px;
+    padding-left: 1.5rem;
   }
   
   .product-checkout {
@@ -324,10 +326,10 @@
   
   .product-delete {
     background-color: white;
-    padding: 5px 10px;
+    padding: .3rem .6rem;
     color: var(--accent-1);
     border-color: var(--accent-2);
-    font-size: 14px;
+    font-size: .9rem;
   }
   
   .product-image-container {
@@ -336,28 +338,28 @@
   
   .product-quantity-container {
     position: absolute;
-    top: 8px;
-    right: -15px;
+    top: .5rem;
+    right: -.95rem;
     background-color: white;
     border-radius: 50%;
-    padding: 5px;
+    padding: .3rem;
   }
   
   .product-quantity {
     background-color: var(--primary-1);
     color: white;
     border-radius: 50%;
-    font-size: 14px;
-    width: 23px;
-    height: 23px;
+    font-size: .88rem;
+    width: 1.45rem;
+    height: 1.45rem;
     display: grid;
     place-items: center;
   }
   
   .product-image {
     background-color: var(--neutral-5);
-    padding: 10px;
-    border-radius: 20px;
+    padding: .62rem;
+    border-radius: 1.25rem;
     transition: transform 180ms ease-out;
   }
   .product:nth-child(2n):hover .product-image {
