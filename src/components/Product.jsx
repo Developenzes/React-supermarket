@@ -12,7 +12,7 @@ export default function Product({details}) {
     return (
         <div className="product">
             <div className="product-image-container">
-                <Link to={`/products/${details.id.integerValue}/details`}><img src={details.image.stringValue} width="100" height="100" className="product-image" alt={details.name.stringValue}
+                <Link to={`/products/${details.id.integerValue}/details`}><img src={details.image.stringValue} className="product-image" alt={details.name.stringValue}
                 /></Link>
                 <div className="product-quantity-container">
                 <div className="product-quantity">{quantity}</div>
