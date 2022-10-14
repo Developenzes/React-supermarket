@@ -455,8 +455,14 @@
     .product-details-layout {
       grid-template-columns: 1fr;
     }
+    .home-layout,
+    .about-layout {
+      padding-bottom: 2.5rem;
+    }
     .home-image {
       order: -1;
+      max-width: 100%;
+      height: auto;
     }
   }
 
@@ -483,6 +489,15 @@
     }
     .product-checkout .product-delete {
       padding: .3rem .6rem;
+    }
+    .table th {
+      padding: .6rem;
+    }
+    .table-cart tbody td:first-child {
+      padding-left: .6rem;
+    }
+    .table-cart th, .table-cart td {
+      font-size: .9rem;
     }
   }
   
