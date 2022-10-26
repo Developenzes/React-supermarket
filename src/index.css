@@ -247,6 +247,10 @@
     text-align: center;
     padding: 10px 25px;
   }
+
+  .hamburger-react {
+    display: none;
+  }
   
   /* TABS */
   .tabs {
@@ -447,6 +451,10 @@
   .pay-form {
     padding-top: 30px;
   }
+
+  #mobile {
+    display: none;
+  }
   
   @media (max-width: 700px) {
     .home-layout,
@@ -459,10 +467,37 @@
     .about-layout {
       padding-bottom: 2.5rem;
     }
+
     .home-image {
       order: -1;
       max-width: 100%;
       height: auto;
+    }
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;      
+      right: -300px;
+      width: 180px;
+      height: 100vh;
+      background-color: var(--accent-5);
+      margin: 0;
+      padding-top: 70px;
+      box-shadow: 1px 1px 7px #c4c4c4;
+      transition: 0.3s ease;
+      z-index: 1;
+    }
+    .navbar ul.active {
+      right: 0;
+    }
+    .navbar li {
+      margin-bottom: 10px;
+    }
+    .hamburger-react {
+      display: block;
+      z-index: 2;
+      color: var(--accent-1);
     }
   }
 
